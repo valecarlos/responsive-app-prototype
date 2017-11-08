@@ -1,3 +1,9 @@
+//matches polyfill
+if (!Element.prototype.matches)
+Element.prototype.matches =
+    Element.prototype.msMatchesSelector ||
+    Element.prototype.webkitMatchesSelector;
+    
 var main = document.querySelector(".main");
 var commonList = document.querySelector(".common-list");
 var backToList = document.querySelector(".common-details__back");

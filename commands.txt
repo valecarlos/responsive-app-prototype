@@ -4,4 +4,8 @@ sass --watch styles/sass:styles/css --style expanded
 #init npm project
 npm init -y
 
+#install dependencies
 npm install browser-sync gulp gulp-postcss autoprefixer gulp-sass gulp-sourcemaps --save-dev
+
+#test browser-sync with external project
+browser-sync start --proxy "http://localhost:81/drupal" --files "css/*.css"
