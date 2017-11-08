@@ -1,0 +1,167 @@
+body {
+  font-size: 16px;
+  min-height: 480px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background: #2d3d46;
+  color: white;
+  font-size: 16px;
+  height: 60px;
+  padding: 19px 5px;
+  overflow: hidden;
+}
+
+.header-btn {
+  outline: none;
+  background: transparent;
+  border: none;
+  margin: 0px 20px;
+}
+
+.aside {
+  background: #f3f3f3;
+  transition: all 0.1s ease-in;
+  flex: 0;
+}
+@media only screen and (min-width: 768px) {
+  .aside {
+    flex: 0 0 50px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .aside {
+    flex: 0 0 220px;
+  }
+}
+
+.nav {
+  transition: width 0.1s ease-in;
+  overflow: hidden;
+  width: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .nav {
+    width: 50px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .nav {
+    width: 220px;
+  }
+}
+
+.nav__item {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.nav__item:hover {
+  background: lightgray;
+}
+
+.nav__span {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .nav__span {
+    display: inline-block;
+    margin-left: 5px;
+  }
+}
+
+.full-height {
+  height: 100%;
+}
+
+.wrapper {
+  height: calc(100% - 60px);
+  display: flex;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px 20px 15px 20px;
+  overflow: auto;
+  font-size: 14px;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .main .common-details {
+    display: none;
+  }
+  .main.details-visible .common-details {
+    display: block;
+  }
+  .main.details-visible .common-list {
+    display: none;
+  }
+}
+
+.common-list, .common-details {
+  overflow: auto;
+}
+
+.common-details {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.common-map-img {
+  margin-bottom: 15px;
+}
+
+.common-item {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  margin: 0px 5px 5px 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.common-item__subtitle {
+  display: inline-block;
+  margin-right: 5px;
+}
+@media only screen and (min-width: 992px) {
+  .common-item__subtitle {
+    display: block;
+  }
+}
+
+.common-item__subdesc {
+  display: inline-block;
+  margin-right: 5px;
+}
+@media only screen and (min-width: 992px) {
+  .common-item__subdesc {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
