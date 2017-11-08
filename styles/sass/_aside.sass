@@ -6,6 +6,13 @@
     flex: 0 0 50px
   @media only screen and (min-width : $screen-lg)
     flex: 0 0 220px
+  
+  @media only screen and (min-width : $screen-xs) and (max-width : $screen-md)
+    &.aside--visible
+      flex: 0 0 50px
+
+      .nav 
+        width: 50px
 
 .nav
   transition: width 0.1s ease-in
