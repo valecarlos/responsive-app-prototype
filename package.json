@@ -1,0 +1,28 @@
+{
+  "name": "Responsive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles/sass:styles/css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valecarlos/responsive-app-prototype.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valecarlos/responsive-app-prototype/issues"
+  },
+  "homepage": "https://github.com/valecarlos/responsive-app-prototype#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}

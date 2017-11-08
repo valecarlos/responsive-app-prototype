@@ -1,0 +1,7 @@
+#pure sass
+sass --watch styles/sass:styles/css --style expanded
+
+#init npm project
+npm init -y
+
+npm install browser-sync gulp gulp-postcss autoprefixer gulp-sass gulp-sourcemaps --save-dev
