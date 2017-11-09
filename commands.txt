@@ -9,3 +9,4 @@ npm install browser-sync gulp gulp-postcss autoprefixer gulp-sass gulp-sourcemap
 
 #test browser-sync with external project
 browser-sync start --proxy "http://localhost:81/drupal" --files "css/*.css"
+browser-sync start --proxy "http://localhost:81/drupal" --files "sites/all/themes/aranda_services/*"
